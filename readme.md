@@ -1,0 +1,1 @@
+# Link do vídeo: [Introdução ao Kubernetes com Minikube ](https://youtu.be/8XmimgJTilc?si=2gSM1E7ij6QLxpU2)
