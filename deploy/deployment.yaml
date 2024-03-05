@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geneate-order-deployment
+  labels:
+    app: generate-order
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: generate-order
+  template:
+    metadata:
+      labels:
+        app: generate-order
+    spec:
+      containers:
+        - name: generate-order
+          image: edcarlosneves/generate-order:1.0.14
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8000
